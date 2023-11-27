@@ -1,0 +1,37 @@
+.container {
+  margin-top: 64px;
+  padding: 24px 20px;
+  gap: 35px;
+  background-color: var(--mantine-color-darkSpaceBlue-6);
+}
+
+.text {
+  color: var(--mantine-color-yellow_-6);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.item {
+  &__container {
+    gap: 8px;
+  }
+
+  &__text1 {
+    color: var(--mantine-color-almostWhite-6);
+    font-size: rem(20px);
+    font-weight: 800;
+  }
+
+  &__text2 {
+    color: var(--mantine-color-silver-6);
+    font-size: rem(15px);
+    font-weight: 400;
+    line-height: 26px;
+  }
+
+  &__divider {
+    border-bottom: 1px solid var(--mantine-color-gunmetal-6);
+    margin: 30px 0;
+  }
+}

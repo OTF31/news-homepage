@@ -1,0 +1,36 @@
+.root {
+  --drawer-size: 256px;
+}
+
+.header {
+  padding-right: 20px;
+}
+
+.body {
+  padding-top: 70px;
+}
+
+.close {
+  color: var(--mantine-color-darkSpaceBlue-6);
+}
+
+.link {
+  &__container {
+    gap: 24px;
+  }
+
+  &__item {
+    font-size: rem(18px);
+    font-weight: 400;
+    color: var(--mantine-color-darkSpaceBlue-6);
+    line-height: 24px;
+
+    @mixin hover {
+      color: var(--mantine-color-lightVermillion-6);
+    }
+  }
+}
+
+.burger {
+  --burger-color: var(--mantine-color-darkSpaceBlue-6);
+}
