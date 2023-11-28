@@ -1,4 +1,4 @@
-import { Box, Group, Image, Stack, Text } from '@mantine/core'
+import { Box, Flex, Group, Image, Text } from '@mantine/core'
 
 import imageGamingGrowth from '@/assets/images/image-gaming-growth.jpg'
 import imageRetro from '@/assets/images/image-retro-pcs.jpg'
@@ -28,7 +28,7 @@ const items = [
 
 const Section3 = () => {
   return (
-    <Stack className={classes['container']}>
+    <Flex className={classes['container']}>
       {items.map((item, index) => {
         const { order, title, description } = item
 
@@ -43,7 +43,7 @@ const Section3 = () => {
           </Group>
         )
       })}
-    </Stack>
+    </Flex>
   )
 }
 

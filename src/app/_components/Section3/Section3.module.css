@@ -1,6 +1,13 @@
 .container {
+  flex-direction: column;
   margin-top: 64px;
   gap: 32px;
+
+  @media (min-width: $mantine-breakpoint-xl) {
+    flex-direction: row;
+    margin-top: 70px;
+    gap: 30px;
+  }
 }
 
 .item {
@@ -10,6 +17,10 @@
 
     img {
       width: 100px;
+    }
+
+    @media (min-width: $mantine-breakpoint-xl) {
+      flex-basis: 350px;
     }
   }
 
@@ -31,7 +42,7 @@
 
   &__description {
     color: var(--mantine-color-gunmetal-6);
-    font-size: 15px;
+    font-size: rem(15px);
     line-height: 26px;
   }
 }

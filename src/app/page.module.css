@@ -1,6 +1,36 @@
-.main {
+.root {
   background-color: var(--mantine-color-almostWhite-6);
+}
+
+.main {
   padding: 0 16px;
   padding-top: 28px;
   padding-bottom: 80px;
+
+  @media (min-width: $mantine-breakpoint-xl) {
+    margin: 0 auto;
+    max-width: 1110px;
+    padding: 0;
+    padding-top: 100px;
+    padding-bottom: 130px;
+  }
+}
+
+.header {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section12 {
+  &__container {
+    flex-direction: column;
+    gap: 0px;
+    justify-content: center;
+
+    @media (min-width: $mantine-breakpoint-xl) {
+      flex-direction: row;
+      margin-top: 55px;
+      gap: 30px;
+    }
+  }
 }

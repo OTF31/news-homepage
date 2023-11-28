@@ -3,7 +3,7 @@
   --button-radius: none;
   --button-color: var(--mantine-color-almostWhite-6);
   --button-fz: rem(14px);
-  --button-hover: var(--mantine-color-lightVermillion-4);
+  --button-hover: var(--mantine-color-darkSpaceBlue-6);
   --button-height: 48px;
   --button-padding-x: 30px;
   letter-spacing: 4.375px;

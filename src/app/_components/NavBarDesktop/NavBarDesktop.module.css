@@ -1,0 +1,25 @@
+.link {
+  &__container {
+    gap: 24px;
+
+    @media (min-width: $mantine-breakpoint-xl) {
+      gap: 40px;
+    }
+  }
+
+  &__item {
+    font-size: rem(15px);
+    font-weight: 400;
+    color: var(--mantine-color-darkSpaceBlue-6);
+    line-height: 26px;
+
+    @mixin hover {
+      color: var(--mantine-color-lightVermillion-6);
+    }
+  }
+}
+
+.burger {
+  --burger-color: var(--mantine-color-darkSpaceBlue-6);
+  --burger-size: 30px;
+}

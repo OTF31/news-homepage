@@ -1,6 +1,6 @@
 'use client'
 
-import { Burger, CloseButton, Drawer, Stack, Text } from '@mantine/core'
+import { Box, Burger, CloseButton, Drawer, Stack, Text } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
 import Link from 'next/link'
 
@@ -10,7 +10,7 @@ const NavBarMobile = () => {
   const [opened, { open, close }] = useDisclosure(false)
 
   return (
-    <>
+    <Box hiddenFrom='xl'>
       <Drawer
         opened={opened}
         onClose={close}
@@ -41,7 +41,7 @@ const NavBarMobile = () => {
       </Drawer>
 
       <Burger className={classes['burger']} opened={opened} onClick={open} />
-    </>
+    </Box>
   )
 }
 
