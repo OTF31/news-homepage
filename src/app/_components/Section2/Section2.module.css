@@ -25,6 +25,11 @@
     color: var(--mantine-color-almostWhite-6);
     font-size: rem(20px);
     font-weight: 800;
+
+    @mixin hover {
+      cursor: pointer;
+      color: var(--mantine-color-yellow_-6);
+    }
   }
 
   &__text2 {
