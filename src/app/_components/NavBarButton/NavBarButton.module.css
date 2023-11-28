@@ -2,21 +2,10 @@
   --drawer-size: 256px;
 }
 
-.header {
-  padding-right: 20px;
-}
-
-.body {
-  padding-top: 70px;
-}
-
-.close {
-  color: var(--mantine-color-darkSpaceBlue-6);
-}
-
 .link {
   &__container {
     gap: 24px;
+    margin-top: 80px;
   }
 
   &__item {
@@ -33,4 +22,5 @@
 
 .burger {
   --burger-color: var(--mantine-color-darkSpaceBlue-6);
+  --burger-size: 30px;
 }
