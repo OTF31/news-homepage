@@ -1,7 +1,7 @@
 import { AppShell, AppShellMain, Group, Image } from '@mantine/core'
 
 import logo from '@/assets/images/logo.svg'
-import NavBarButton from './_components/NavBarButton'
+import NavBarMobile from './_components/NavBarMobile'
 import Section1 from './_components/Section1'
 import Section2 from './_components/Section2'
 import Section3 from './_components/Section3'
@@ -13,7 +13,7 @@ const Home = () => {
       <AppShellMain className={classes.main}>
         <Group justify='space-between'>
           <Image src={logo.src} w={45} alt='logo' />
-          <NavBarButton />
+          <NavBarMobile />
         </Group>
         <Section1 />
         <Section2 />

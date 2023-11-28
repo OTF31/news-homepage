@@ -4,9 +4,9 @@ import { Burger, CloseButton, Drawer, Stack, Text } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
 import Link from 'next/link'
 
-import classes from './NavBarButton.module.css'
+import classes from './NavBarMobile.module.css'
 
-const NavBarButton = () => {
+const NavBarMobile = () => {
   const [opened, { open, close }] = useDisclosure(false)
 
   return (
@@ -45,4 +45,4 @@ const NavBarButton = () => {
   )
 }
 
-export default NavBarButton
+export default NavBarMobile
